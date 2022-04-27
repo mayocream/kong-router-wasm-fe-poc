@@ -113,7 +113,7 @@ init().then((wasm) => {
       tree_structure.nodeStructure = nodes;
       new Treant(tree_structure);
     } catch (e) {
-      astDom.innerText = e
+      astDom.innerHTML = `<div id="err"><pre style="width: 300px;margin-left: auto;margin-right: auto;color: crimson;">${e}</pre></div>`
     }
 
   }))

@@ -19,6 +19,7 @@ body {
   margin-top: 2rem;
   max-width: 10;
   font-family: monospace;
+  text-align: left;
 }
 
 .tree-node {
