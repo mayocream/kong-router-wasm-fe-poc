@@ -1,0 +1,13 @@
+---
+additional:
+- docker-fpm
+- lacework-manifest
+- kong-build-tools-base-images
+- kong-internal-unstable-helm
+
+
+files:
+- '!README.md'
+- '!.secrets.baseline'
+- '!**/template-sync.yml'
+- '!.github/workflows/sync.yml'
