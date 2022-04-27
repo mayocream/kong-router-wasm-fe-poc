@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/Treant.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/examples/evolution-tree/example6.css"> -->
+    <title>Kong Router WASM POC</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Kong Router WASM POC!</h1>
+
+      <h2>Client-side WASM module compiles DSL to AST.</h2>
+      <p>Please input DSL:</p>
+      <pre contenteditable class="language-markup" data-linenumber="0" id="dsl">a == 1 && (b == 2 || c == "foo")</pre>
+
+      <h2>AST</h2>
+      <div class="chart" id="OrganiseChart6"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.3/underscore-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/vendor/raphael.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/Treant.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/vendor/jquery.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+body {
+  margin: 0 1rem;
+}
+
+* {
+  font-size: 13px;
+}
+
+#OrganiseChart6 {
+  margin-top: 2rem;
+  max-width: 10;
+  font-family: monospace;
+}
+
+.tree-node {
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+.node-name {
+  margin: 1rem 1rem;
+}
+
+#dsl {
+  text-align: center;
+  margin: 1rem 0;
+}
