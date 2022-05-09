@@ -16,7 +16,9 @@
 
       <h2>Client-side WASM module compiles DSL to AST.</h2>
       <p>Please input DSL:</p>
-      <pre contenteditable class="language-markup" data-linenumber="0" id="dsl">a == 1 && (b == 2 || c == "foo")</pre>
+      <pre contenteditable class="language-markup" data-linenumber="0" id="dsl">net.protocol == "http" &&
+http.host == "example.com" &&
+(http.path ^= "/foo" || http.path ^= "/bar")</pre>
 
       <h2>AST</h2>
       <div class="chart" id="OrganiseChart6"></div>
