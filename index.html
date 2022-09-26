@@ -15,10 +15,10 @@
       <h1>Kong Router WASM POC!</h1>
 
       <h2>Client-side WASM module compiles DSL to AST.</h2>
-      <p>Please input DSL:</p>
-      <pre contenteditable class="language-markup" data-linenumber="0" id="dsl">net.protocol == "http" &&
+      <p>Please input DSL: (<a id="exp1">Example1</a>, <a id="exp2">Example2</a>, <a id="exp3">Example3</a>, <a id="exp4">Example4</a>)</p>
+      <pre class="prism-live language-javascript" id="dsl"><code contenteditable id="dsl-expression">net.protocol == "http" &&
 http.host == "example.com" &&
-(http.path ^= "/foo" || http.path ^= "/bar")</pre>
+(http.path ^= "/foo" || http.path ^= "/bar")</code></pre>
 
       <h2>AST</h2>
       <div class="chart" id="OrganiseChart6"></div>
@@ -29,6 +29,7 @@ http.host == "example.com" &&
     <script src="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/vendor/raphael.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/Treant.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fperucic/treant-js@master/vendor/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/PrismJS/live@master/src/prism-live.js?load=javascript"></script> -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>
